@@ -3,7 +3,7 @@
 <head>
     <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="30" />
+   <!--  <meta http-equiv="refresh" content="30" /> -->
     <title>{% block title %}{% endblock %}</title>
 
     <!-- Background stylesheets
@@ -83,7 +83,7 @@
 	left: 0;
 	background-color: #292c2f;
 	width: 250px;
-	height: 100%;
+	min-height: 100%;
 	padding: 20px 0;
 }
 
@@ -126,8 +126,8 @@
 .sidebar-links div.selected > a{
 	background-color: rgb(235, 232, 219);
 	color: #565d63;
-	line-height: 2.3;
-	margin: 0;
+	line-height: 2.2;
+	margin: auto;
 }
 
 .sidebar-links div > a i.fa {
@@ -150,10 +150,10 @@
 	margin: 0;
 	transition: 0.4s;
 }
-
+/* for changing the height of each sublink space- */
 .sidebar-links div.selected ul.sub-links {
-	max-height: 150px;
-	padding: 12px 0 12px 30px;
+	max-height: 2000px;
+	padding: 10px 0 10px 25px;
 }
 
 .sidebar-links div .sub-links a {
@@ -183,7 +183,7 @@
 
 	.sidebar-left-collapse .sidebar-links {
 		text-align: center;
-		margin: 20px auto 0;
+		margin: 0px auto 0;
 	}
 
 	.sidebar-links div {
@@ -289,6 +289,8 @@
       }
     }
 </style>
+
+
 </head>
 <body>
 
@@ -305,7 +307,7 @@
 			links.on('click', function () {
 
 				links.removeClass('selected');
-				$(this).addClass('selected');
+				$(this).toggleClass('selected');
 
 			});
 		});

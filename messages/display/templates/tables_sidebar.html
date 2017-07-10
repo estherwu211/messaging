@@ -12,7 +12,34 @@
 
 				<a href="">
 					<i class="fa fa-table"></i>Tables
-				</a>
+                </a>
+
+                <ul class="sub-links">
+					<!--
+						<form action="/display/morning" method="post">
+
+                            <label for="start_time">Getting data from: </label>
+                  			<input type="text" id="start_time" name="start_time"  placeholder="Start time" />
+                            <br>
+                            <label for="end_time"> to: </label>
+                            <br>
+                  			<input type="text" id="end_time" name="end_time"  placeholder="End time" />
+                            <input type="submit" style="display: none" />
+                        </form>-->
+                    <form action="/display/time_query/" method="post">
+                         {% csrf_token %}
+                         Scoreboard(s):
+                         {{form.choose_scoreboard}}
+                         Start time:
+                         {{form.start_time}}
+                         <br>
+                         End time:
+                         {{form.end_time}}
+                        <input type="submit" style="display: none" />
+                    </form>
+
+				</ul>
+
 
 
 			</div>
@@ -85,8 +112,9 @@
 
                 <ul class="sub-links">
 					<li><i class="fa fa-search" style="font-size: 18px;"></i>
-						<form>
-                  			<input type="text" name="search" placeholder="Input image ID";>
+						<form action="" method="GET">
+                  			<input type="text" id="test" name="img_id"  placeholder="ID" />
+                            <input type="submit" style="display: none" />
                         </form>
                     </li>
 				</ul>
@@ -140,14 +168,6 @@
               {% for c in column_name_ack %}
                 <th>{{c}}</th>
 
-              <!--
-            <th>Image ID</th>
-            <th>Job</th>
-            <th>Session</th>
-            <th>State</th>
-            <th>Visit</th>
-            -->
-
               {% endfor %}
           </tr>
           {% for first_list in second_list_ack %}
@@ -158,7 +178,16 @@
           </tr>
           {% endfor %}
         </table>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
 
+		$(document).ready(function(){
+            $("button").click(function(){
+                alert("Value: " + $("#test").val());
+            });
+        });
+
+	</script>
         <br>
         <br>
         <br>
