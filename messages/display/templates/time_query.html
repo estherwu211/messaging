@@ -1,7 +1,6 @@
 {% extends 'base.html'%}
-{% block title %}Forwarder {{forwarder_id}} details{% endblock %}
+{% block title %}Messaging{% endblock %}
 {% block main_content %}
-
 	<aside class="sidebar-left-collapse">
         {% load static %}
 		<a href="https://www.lsst.org/">
@@ -9,12 +8,12 @@
         </a>
 		<div class="sidebar-links">
 
-			<div class="link">
+			<div class="link selected">
 
-				<a href="/display">
+				<a href="">
 					<i class="fa fa-table"></i>Tables
-				</a>
-				<ul class="sub-links">
+                </a>
+                <ul class="sub-links">
                     <form action="/display/time_query/" method="post">
                          {% csrf_token %}
                          Scoreboard(s):
@@ -28,13 +27,12 @@
                          {{form.end_time}}
                         <input type="submit" style="display: none" />
                     </form>
-
 				</ul>
 
 
 			</div>
 
-			<div class="link">
+            <div class="link">
 
 				<a href="#">
 					<i class="fa fa-keyboard-o"></i>Commendable Devices
@@ -48,14 +46,14 @@
 
 			</div>
 
-			<div class="link selected">
+			<div class="link">
 
 				<a href="#">
 					<i class="fa fa-forward"></i>Forwarders
 				</a>
 
 				<ul class="sub-links">
-					<li><a href="#">Archive Forwarders</a></li>
+                    <li><a href="#">Archive Forwarders</a></li>
                     <li><a href="#">PP Forwarders</a></li>
 					<li><a href="/display/forwarder2">Forwarder 2</a></li>
 					<li><a href="/display/forwarder6">Forwarder 6</a></li>
@@ -94,20 +92,20 @@
 
 			</div>
 
-			<div class="link">
+            <div class="link">
 
 				<a href="#">
 					<i class="fa fa-picture-o"></i>Image IDs
 				</a>
 
-				<ul class="sub-links">
+                <ul class="sub-links">
 					<li><i class="fa fa-search" style="font-size: 18px;"></i>
-						<form>
-                  			<input type="text" name="search" placeholder="Input image ID";>
+						<form action="" method="GET">
+                  			<input type="text" id="test" name="img_id"  placeholder="ID" />
+                            <input type="submit" style="display: none" />
                         </form>
                     </li>
 				</ul>
-
 
 			</div>
 
@@ -116,41 +114,70 @@
 	</aside>
 
 	<div class="main-content">
-        <h1 title="HAHAHAHA" style="text-align:center;">Forwarder {{forwarder_id}} Status History</h1>
-        {% for m in machine_chosen %}
-        <ul class="info">{{m.time}}
 
-            <li>Status: {{m.status}}
-                {% if m.status == 'IDLE' %}
-                    <img src="{% static "images/rvn.jpg" %}" alt="Status" style="width:20px;height:20px" title="IDLE">
+    {% if have_job_state %}
+        <h2>
+            JOB_STATE Scoreboard
+        </h2>
 
-                {% elif m.status == 'WORKING' %}
-                    <img src="{% static "images/glazed.jpg" %}" alt="Status" style="width:20px;height:20px" title="WORKING">
+        <table>
+          <tr>
+              <th>Time</th>
+              {% for c in column_name_job_state %}
+                <th>{{c}}</th>
+              {% endfor %}
+          </tr>
+          {% for first_list in second_list_job_state %}
+          <tr>
+              {% for l in first_list %}
+            <td>{{l}}</td>
+              {% endfor %}
+          </tr>
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+    {% endif %}
 
-                {% elif m.status == 'BAD' %}
-                    <img src="{% static "images/felix.jpg" %}" alt="Status" style="width:20px;height:20px" title="BAD">
+    {% if have_ack %}
+        <h2>
+            Ack Scoreboard
+        </h2>
 
-                {% else %}
-                    <img src="{% static "images/Love_story.jpg" %}" alt="Status" style="width:20px;height:20px" title="UNKNOWN">
+        <table>
+          <tr>
+              <th>Time</th>
+              {% for c in column_name_ack %}
+                <th>{{c}}</th>
 
-                {% endif %}
-            </li>
+              {% endfor %}
+          </tr>
+          {% for first_list in second_list_ack %}
+          <tr>
+              {% for l in first_list %}
+              <td><time>{{l}}</time></td>
+              {% endfor %}
+          </tr>
+          {% endfor %}
+        </table>
+        <br>
+        <br>
 
-            <li >
-                Session: {{m.session}}
-            </li>
+    {% endif %}
 
-            <li >
-                Image ID: {{m.image_id}}
-            </li>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
 
-            <li >
-                Visit: {{m.visit}}
-            </li>
+		$(document).ready(function(){
+            $("button").click(function(){
+                alert("Value: " + $("#test").val());
+            });
+        });
 
-        </ul>
-        {% endfor %}
+	</script>
 
     </div>
 
-{% endblock %}
+	{% endblock %}
+</body>
+</html>

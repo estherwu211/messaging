@@ -4,7 +4,7 @@
 	<aside class="sidebar-left-collapse">
         {% load static %}
 		<a href="https://www.lsst.org/">
-        <img border="0" alt="LSST" src="{% static "images/lsst_trans.png" %}" width="100" height="45">
+        <img border="0" alt="LSST" src="{% static "images/lsst_trans.png" %}" width="85" height="40">
         </a>
 		<div class="sidebar-links">
 
@@ -13,23 +13,13 @@
 				<a href="">
 					<i class="fa fa-table"></i>Tables
                 </a>
-
                 <ul class="sub-links">
-					<!--
-						<form action="/display/morning" method="post">
-
-                            <label for="start_time">Getting data from: </label>
-                  			<input type="text" id="start_time" name="start_time"  placeholder="Start time" />
-                            <br>
-                            <label for="end_time"> to: </label>
-                            <br>
-                  			<input type="text" id="end_time" name="end_time"  placeholder="End time" />
-                            <input type="submit" style="display: none" />
-                        </form>-->
                     <form action="/display/time_query/" method="post">
                          {% csrf_token %}
                          Scoreboard(s):
                          {{form.choose_scoreboard}}
+                         (YYYY,MM,DD,HH,MM,SS)
+                        <br>
                          Start time:
                          {{form.start_time}}
                          <br>
@@ -37,9 +27,7 @@
                          {{form.end_time}}
                         <input type="submit" style="display: none" />
                     </form>
-
 				</ul>
-
 
 
 			</div>

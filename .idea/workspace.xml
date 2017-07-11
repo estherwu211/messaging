@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af24591d-dea8-4f93-b3bf-08c6c33701f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messages/display/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messages/display/templates/demo.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messages/display/templates/name.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messages/display/templates/try_jquery.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/messages/display/query.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/messages/display/templates/name.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/display/templates/base.html" afterPath="$PROJECT_DIR$/messages/display/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/display/templates/forwarders.html" afterPath="$PROJECT_DIR$/messages/display/templates/forwarders.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/display/templates/tables_sidebar.html" afterPath="$PROJECT_DIR$/messages/display/templates/tables_sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/display/urls.py" afterPath="$PROJECT_DIR$/messages/display/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/display/views.py" afterPath="$PROJECT_DIR$/messages/display/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/messages/settings.py" afterPath="$PROJECT_DIR$/messages/messages/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/messages/display/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="112" column="25" lean-forward="false" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
+            <state relative-caret-position="1917">
+              <caret line="91" column="83" lean-forward="false" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -51,8 +46,8 @@
       <file leaf-file-name="tables_sidebar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/messages/display/templates/tables_sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
-              <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="138">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#form#0;n#ul#0;n#div#0;n#div#0;n#aside#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#li#0;n#ul#0;n#div#5;n#div#0;n#aside#0;n#!!top" expanded="true" />
@@ -62,21 +57,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messages/display/templates/base.html">
+      <file leaf-file-name="forwarders.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/messages/display/templates/forwarders.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="154" column="20" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
+            <state relative-caret-position="184">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#form#0;n#ul#0;n#div#0;n#div#0;n#aside#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="time_query.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/messages/display/templates/time_query.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="name.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messages/display/templates/name.html">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/messages/display/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="1196">
+              <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -140,7 +147,6 @@
         <option value="$PROJECT_DIR$/messages/display/static/stylesheets/backgrounds.css" />
         <option value="$PROJECT_DIR$/messages/display/templates/tables.html" />
         <option value="$PROJECT_DIR$/messages/display/static/stylesheets/base.html" />
-        <option value="$PROJECT_DIR$/messages/display/templates/forwarders.html" />
         <option value="$PROJECT_DIR$/messages/display/query.py" />
         <option value="$PROJECT_DIR$/messages/display/demo_return.py" />
         <option value="$PROJECT_DIR$/messages/messages/settings.py" />
@@ -148,9 +154,11 @@
         <option value="$PROJECT_DIR$/messages/display/urls.py" />
         <option value="$PROJECT_DIR$/messages/display/forms.py" />
         <option value="$PROJECT_DIR$/messages/display/templates/name.html" />
+        <option value="$PROJECT_DIR$/messages/display/views.py" />
         <option value="$PROJECT_DIR$/messages/display/templates/tables_sidebar.html" />
         <option value="$PROJECT_DIR$/messages/display/templates/base.html" />
-        <option value="$PROJECT_DIR$/messages/display/views.py" />
+        <option value="$PROJECT_DIR$/messages/display/templates/forwarders.html" />
+        <option value="$PROJECT_DIR$/messages/display/templates/time_query.html" />
       </list>
     </option>
   </component>
@@ -194,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,6 +289,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -478,13 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/messages/display/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messages/display/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -688,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/templates/forwarders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="102" column="36" lean-forward="false" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messages/display/demo.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -706,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,6 +726,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/messages/display/query.py" />
+    <entry file="file://$PROJECT_DIR$/messages/display/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/display/demo_return.py" />
+    <entry file="file://$PROJECT_DIR$/messages/display/templates/try_jquery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/messages/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1250">
+          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages/display/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/messages/display/templates/love_story.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -741,43 +765,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/query.py">
+    <entry file="file://$PROJECT_DIR$/messages/display/templates/name.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="26">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/models.py">
+    <entry file="file://$PROJECT_DIR$/messages/display/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/demo_return.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/templates/try_jquery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messages/messages/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1250">
-          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="1917">
+          <caret line="91" column="83" lean-forward="false" selection-start-line="91" selection-start-column="83" selection-end-line="91" selection-end-column="83" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -791,26 +793,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/forms.py">
+    <entry file="file://$PROJECT_DIR$/messages/display/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/templates/name.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state relative-caret-position="1196">
+          <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/messages/display/templates/tables_sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#input#0;n#form#0;n#ul#0;n#div#0;n#div#0;n#aside#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#li#0;n#ul#0;n#div#5;n#div#0;n#aside#0;n#!!top" expanded="true" />
@@ -819,21 +813,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/messages/display/templates/forwarders.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="154" column="20" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#ul#0;n#div#0;n#div#0;n#aside#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/display/views.py">
+    <entry file="file://$PROJECT_DIR$/messages/display/templates/time_query.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="112" column="25" lean-forward="false" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
